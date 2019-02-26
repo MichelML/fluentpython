@@ -34,3 +34,11 @@ t = (20, 8)
 print(divmod(*t))
 quotient, remainder = divmod(*t)
 print(quotient, remainder)
+
+## excess items
+a, b, *rest = range(5)
+print(a, b, rest)
+
+## middle items
+a, *body, c = range(5)
+print(a, body, c)
