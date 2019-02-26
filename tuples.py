@@ -1,0 +1,17 @@
+# Some introductory texts about Python present tuples as “immutable lists,” 
+# but that is short selling them. Tuples do double duty: they can be used as 
+# immutable lists and also as records with no field names. 
+# This use is sometimes overlooked, so we will start with that.
+
+# tuples as records
+# Tuples hold records: each item in the tuple holds the data for one field and the 
+# position of the item gives its meaning. 
+
+lax_coordinates = (33.9425, -118.408056)
+city, year, pop, chg, area = ('Tokyo', 2003, 32450, 0.66, 8014)
+traveler_ids = [('USA', '31195855'), ('BRA', 'CE34876'), ('ESP', 'XDA9347')]
+for passport in sorted(traveler_ids):
+  print('%s/%s' % passport)
+
+for country, _ in traveler_ids:
+  print(country)
