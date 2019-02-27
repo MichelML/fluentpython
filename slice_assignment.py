@@ -4,3 +4,5 @@ l[2:5] = [20, 30]
 print(l)
 del l[5:7]
 print(l)
+l[3::2] = [11, 22]
+print(l)
