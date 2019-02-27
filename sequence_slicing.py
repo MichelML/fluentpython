@@ -1,3 +1,4 @@
+# it is the __getitem__ dunder method that is behind the slicing [] logic
 l = [10, 20, 30, 40, 50, 60]
 print(l[:2])
 print(l[2:])
