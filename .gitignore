@@ -123,4 +123,7 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
+### bin files
+*.bin
+
 # End of https://www.gitignore.io/api/python
