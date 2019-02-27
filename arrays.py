@@ -19,3 +19,5 @@ fp = open('floats.bin', 'rb')
 floats2.fromfile(fp, 10**7)
 print(floats2[:5])
 fp.close()
+
+print(floats2 == floats)
