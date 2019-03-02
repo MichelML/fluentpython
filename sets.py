@@ -19,7 +19,10 @@ print(sl)
 # empty set
 m = {}
 print(m)
-print(type(m)) # dict
+print(type(m))  # dict
 m = set()
 print(m)
-print(type(m)) # set
+print(type(m))  # set
+
+# frozenset
+frozenset(range(10))
