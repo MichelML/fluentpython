@@ -1,6 +1,6 @@
 def tag(name, *content, cls=None, **attrs):
     """Generate one or more HTML tags"""
-    if cls is not None:
+    if cls is not None and attrs:
         attrs['class'] = cls
     if attrs:
         attr_str = ''.join(' %s="%s"' % (attr, value)
@@ -8,6 +8,10 @@ def tag(name, *content, cls=None, **attrs):
     else:
         attr_str = ''
     if content:
-        return '\n'.join('<%s%s><%s</%s>' % (name, attr_str, c, name) for c in content)
+        return '\n'.join('<%s%s>%s</%s>' % (name, attr_str, c, name) for c in content)
     else:
         return '<%s%s />' % (name, attr_str)
+
+print(tag('br'))
+print(tag('p', 'hello'))
+print(tag('p', 'hello', 'world'))
