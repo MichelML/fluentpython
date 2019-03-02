@@ -11,3 +11,7 @@ print(found)
 # secound method
 found = len(set(needles).intersection(haystack))
 print(found)
+
+# set literals
+sl = {1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4}
+print(sl)
