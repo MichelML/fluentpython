@@ -15,3 +15,11 @@ print(found)
 # set literals
 sl = {1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4}
 print(sl)
+
+# empty set
+m = {}
+print(m)
+print(type(m)) # dict
+m = set()
+print(m)
+print(type(m)) # set
