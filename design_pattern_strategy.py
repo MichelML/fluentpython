@@ -76,3 +76,7 @@ class LargeOrderPromo(Promotion):  # third Concrete strategy
         if len(distinct_items) >= 10:
             return order.total() * .07
         return 0
+
+
+# the example could have been implemented with a more functional approach
+# passing a different promotion function to self.promotion 
