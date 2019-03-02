@@ -1,3 +1,7 @@
+# there are variations of dict such as
+# collections.OrderedDict and
+# collections.ChainMap
+
 a = dict(one=1, two=2, three=3)
 b = {'one': 1, 'two': 2, 'three': 3}
 c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
