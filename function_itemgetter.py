@@ -10,3 +10,7 @@ metro_data = [
 
 for city in sorted(metro_data, key=itemgetter(1)):
     print(city)
+
+cc_name = itemgetter(1, 0)
+for city in metro_data:
+    print(cc_name(city))
