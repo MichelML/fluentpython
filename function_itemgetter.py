@@ -14,3 +14,6 @@ for city in sorted(metro_data, key=itemgetter(1)):
 cc_name = itemgetter(1, 0)
 for city in metro_data:
     print(cc_name(city))
+
+
+# you could use attrgetter from operator if you would be using a namedtuple
