@@ -1,5 +1,13 @@
 # A decorator is a callable that takes another function as argument
 
+# Strictly speaking, decorators are just syntactic sugar. 
+# As we just saw, you can always simply call a 
+# decorator like any regular callable, passing 
+# another function. Sometimes that is actually 
+# convenient, especially when doing metaprogramming changing 
+# program behavior at runtime. 
+
+
 def decorate(callback):
   return callback()
 
@@ -14,3 +22,4 @@ def target():
 # target = decorate(target)
 
 # decorator usually replaces a function with a different one 
+
