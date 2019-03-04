@@ -7,6 +7,8 @@
 # convenient, especially when doing metaprogramming changing 
 # program behavior at runtime. 
 
+# They are executed immediately when a module is loaded
+
 
 def decorate(callback):
   return callback()
