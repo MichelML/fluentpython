@@ -12,3 +12,5 @@ def target():
 #   print('running target()')
 
 # target = decorate(target)
+
+# decorator usually replaces a function with a different one 
