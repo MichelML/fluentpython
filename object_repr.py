@@ -15,5 +15,10 @@ class Vector2d:
     class_name = type(self).__name__ 
     return '{}({!r}, {!r})'.format(class_name, *self)
 
+  def __format__(self, fmt_spec=''):
+    components = (format(c, fmt_spec) for c in self)
+    return '({}, {})'.format(*components)
+
 vec = Vector2d(1,2)
 print(vec)
+print(format(vec))
