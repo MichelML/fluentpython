@@ -10,4 +10,13 @@ g = gen_123()
 print(next(g))
 print(next(g))
 print(next(g))
-print(next(g)) # this will throw
+
+def gen_AB():
+  print('start')
+  yield 'A'
+  print('continue')
+  yield 'B'
+  print('end')
+
+for i in gen_AB():
+  print(i)
