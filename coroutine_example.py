@@ -1,3 +1,5 @@
+from inspect import getgeneratorstate
+
 def simple_coroutine():
   print('--> coroutine started')
   x = yield
