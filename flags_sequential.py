@@ -10,6 +10,8 @@ POP20_CC = (
 BASE_URL = 'http://flupy.org/data/flags'
 
 DEST_DIR = 'downloads/'
+if not os.path.exists(DEST_DIR):
+    os.makedirs(DEST_DIR)
 
 
 def save_flag(img, filename):
