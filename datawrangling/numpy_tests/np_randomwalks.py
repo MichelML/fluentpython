@@ -13,3 +13,8 @@ walks.min()
 hits30 = (np.abs(walks) >= 30).any(1)
 hits30
 hits30.sum()
+
+# crossing times
+crossing_times = (np.abs(walks[hits30]) >= 30).argmax(1)
+crossing_times
+crossing_times.mean()
